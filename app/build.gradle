@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.example.xiayanlei.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: 'app_module']
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+/*apt {
+    arguments {
+        moduleName "app_module"
+    }
+}*/
+
+dependencies {
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    //testCompile 'junit:junit:4.12'
+    //testCompile 'junit:junit:4.10'
+    //testCompile 'org.robolectric:robolectric:3.0'
+    //compile 'com.android.support:appcompat-v7:23.+'
+    compile 'com.android.support:design:23+'
+    //compile files('libs/android-support-v4.jar')
+    //compile files('libs/android-support-v7-appcompat.jar')
+    //compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:cardview-v7:23.+'
+    compile project(':router')
+    annotationProcessor project(':compiler')
+    //compile files('libs/compiler.jar')
+    compile project(':temp')
+}
+
+
+//task copyApks(type:Copy) {
+//    def task = tasks.findByName("build.assembleDebug");
+//    if (task == null){
+//        println('afjgdakfgadkjfgadkjs')
+////        task.doFirst {
+////            println('afjgdakfgadkjfgadkjs')
+////        }
+//    }
+//    def start = "$buildDir\\outputs\\apk";
+//    def dest = "$rootDir\\copyOts";
+//    println('copy from ' + start + " to " + dest)
+//    from(start) into dest
+//}

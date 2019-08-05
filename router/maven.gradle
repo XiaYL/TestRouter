@@ -1,0 +1,20 @@
+apply plugin: 'maven'
+uploadArchives {
+    configuration = configurations.archives
+    repositories {
+        mavenDeployer {
+            repository(url: MAVEN_LOCAL_URL) {
+                authentication(userName: USER_NAME, password: PASSWORD)
+            }
+            pom.project{
+                version '1.0.0'
+                artifactId 'net.luculent.router'
+                group 'router'
+                packaging 'aar'
+            }
+        }
+    }
+}
+artifacts{
+    archives file('router.jar')
+}

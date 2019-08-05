@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:onClick="onlineView"
+        android:text="http://172.16.133.52:7007/Liems/xslt/frameWork/pdfjs/web/viewer.jsp?url=/Liems/temp/wordTohtml/977.PDF"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="onlineView"
+        android:text="http://172.16.133.52:7007/Liems/temp/wordTohtml/966.html"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="onlineView"
+        android:text="http://172.16.133.52:7007/Liems/temp/wordTohtml/968.html"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="onlineView"
+        android:text="http://172.16.133.52:7007/Liems/temp/wordTohtml/970.html"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="onlineView"
+        android:text="http://172.16.133.52:7007/Liems/temp/wordTohtml/965.html"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="onlineView"
+        android:text="http://172.16.133.52:7007/Liems/temp/wordTohtml/960.html"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="onlineView"
+        android:text="http://172.16.133.52:7007/Liems/temp/wordTohtml/955.html"
+        android:textColor="@color/colorPrimary"/>
+</LinearLayout>

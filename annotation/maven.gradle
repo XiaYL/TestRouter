@@ -1,0 +1,20 @@
+apply plugin: 'maven'
+uploadArchives {
+    configuration = configurations.archives
+    repositories {
+        mavenDeployer {
+            repository(url: 'http://168.168.10.191:8080/nexus/content/repositories/maven-local/') {
+                authentication(userName: 'admin', password: 'admin123')
+            }
+            pom.project{
+                version '1.0.0'
+                artifactId 'net.luculent.router'
+                group 'annotation'
+                packaging 'jar'
+            }
+        }
+    }
+}
+artifacts{
+    archives file('annotation.jar')
+}
